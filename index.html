@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Øptic | Interview</title>
+<style>
+:root{--bg:#242424;--panel:#303030;--panel2:#353535;--teal:#20d0ba;--teal2:#12a996;--muted:#b6c2c0;--text:#e8eeec;--line:#484f4e}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% 0%,#174d48 0,transparent 36%),var(--bg);color:var(--text);font-family:Inter,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.7}
+.wrap{width:min(900px,92%);margin:auto}.top{display:flex;justify-content:space-between;align-items:center;padding:24px 0}.brand{font-size:28px;font-weight:800;letter-spacing:1px}.brand span{color:var(--teal)}.pill{border:1px solid #2b877c;border-radius:99px;padding:5px 12px;color:var(--teal);font-size:12px}
+.hero{padding:34px 0 26px}.eyebrow{color:var(--teal);font-size:13px;letter-spacing:2px;font-weight:700}.hero h1{font-size:clamp(32px,6vw,54px);line-height:1.2;margin:12px 0}.hero h1 em{font-style:normal;color:var(--teal)}.hero p{color:var(--muted);max-width:640px}
+.card{background:linear-gradient(145deg,#303332,#292a2a);border:1px solid var(--line);border-radius:20px;padding:clamp(18px,4vw,32px);margin:18px 0 36px;box-shadow:0 20px 60px #0002}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.full{grid-column:1/-1}label,.qtitle{font-weight:650;font-size:14px}input,select,textarea{width:100%;background:#202222;border:1px solid #4b5351;border-radius:10px;padding:13px 14px;color:var(--text);font:inherit;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px #20d0ba20}textarea{min-height:110px;resize:vertical}input::placeholder,textarea::placeholder{color:#858f8d}.section{border-top:1px solid var(--line);margin-top:25px;padding-top:23px}.section h2{font-size:19px;margin:0 0 5px}.hint{color:var(--muted);font-size:13px;margin:0 0 17px}.questions{display:grid;gap:18px}.q{background:#292b2a;border:1px solid #414746;border-radius:13px;padding:16px}.qtitle{display:block;margin-bottom:10px}.req{color:var(--teal)}.actions{display:flex;gap:12px;align-items:center;margin-top:24px;flex-wrap:wrap}.btn{border:0;border-radius:11px;padding:13px 22px;font-weight:750;font-size:15px;cursor:pointer}.primary{background:var(--teal);color:#152321}.primary:hover{background:#53e5d3}.secondary{background:transparent;border:1px solid #555d5b;color:var(--text)}.note{color:var(--muted);font-size:12px}.status{display:none;margin-top:18px;padding:14px;border-radius:10px;background:#173b36;color:#9df7e9}.status.error{background:#492a2a;color:#ffc7c7}.footer{color:#8f9997;font-size:12px;text-align:center;padding:8px 0 30px}.progress{height:3px;background:#3e4543;border-radius:9px;overflow:hidden;margin-top:8px}.progress span{display:block;height:100%;width:0;background:var(--teal);transition:width .2s}
+@media(max-width:620px){.grid{grid-template-columns:1fr}.full{grid-column:auto}.top{padding:17px 0}.hero{padding-top:20px}.card{border-radius:15px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><div class="brand">Ø<span>ptic</span></div><div class="pill">TALENT APPLICATION</div></header>
+<section class="hero"><div class="eyebrow">LET'S BUILD WHAT'S NEXT</div><h1>كل فكرة عظيمة<br>بتبدأ بـ <em>شخص مناسب.</em></h1><p>أهلًا بيك في مقابلة الانضمام إلى Øptic. جاوب على الأسئلة بوضوح، وشاركنا طريقة تفكيرك وخبراتك. مفيش إجابة مثالية؛ اللي يهمنا نفهمك ونعرف إزاي ممكن نشتغل سوا.</p></section>
+<form id="interview" class="card">
+<div class="grid">
+<div class="field"><label for="name">الاسم بالكامل <span class="req">*</span></label><input id="name" name="name" required placeholder="اكتب اسمك"></div>
+<div class="field"><label for="email">الإيميل <span class="req">*</span></label><input id="email" name="email" type="email" required placeholder="name@example.com"></div>
+<div class="field"><label for="phone">رقم الموبايل / واتساب <span class="req">*</span></label><input id="phone" name="phone" required placeholder="01xxxxxxxxx"></div>
+<div class="field"><label for="role">التخصص اللي بتقدم فيه <span class="req">*</span></label><select id="role" name="role" required><option value="">اختار التخصص</option><option>UI/UX Design</option><option>Web Development</option><option>Frontend Development</option><option>Backend Development</option><option>Graphic Design / Branding</option><option>Marketing / Business Development</option><option>Content Writing</option><option>Other</option></select></div>
+<div class="field"><label for="experience">مستوى الخبرة <span class="req">*</span></label><select id="experience" name="experience" required><option value="">اختار مستواك</option><option>لسه بتعلم / مبتدئ</option><option>عندي مشاريع تدريبية</option><option>عندي خبرة عملية أقل من سنتين</option><option>خبرة من سنتين لـ 5 سنين</option><option>أكثر من 5 سنين</option></select></div>
+<div class="field"><label for="availability">الوقت المتاح للتعاون <span class="req">*</span></label><select id="availability" name="availability" required><option value="">اختار المتاح</option><option>بضع ساعات أسبوعيًا</option><option>10–20 ساعة أسبوعيًا</option><option>أكثر من 20 ساعة أسبوعيًا</option><option>حسب المشروع</option></select></div>
+<div class="field full"><label for="portfolio">رابط البورتفوليو / Behance / GitHub / أعمال سابقة</label><input id="portfolio" name="portfolio" type="url" placeholder="https://..."></div>
+</div>
+<div class="section"><h2>خلينا نتعرف عليك</h2><p class="hint">إجاباتك هتساعدنا نفهم طريقة تفكيرك وتوقعاتك من التعاون.</p>
+<div class="questions">
+<div class="q"><label class="qtitle" for="q1">1. عرفنا بنفسك باختصار، وإيه أكتر حاجة بتميزك في تخصصك؟ <span class="req">*</span></label><textarea id="q1" name="q1" required placeholder="اكتب إجابتك هنا..."></textarea></div>
+<div class="q"><label class="qtitle" for="q2">2. احكيلنا عن مشروع اشتغلت عليه أو مشكلة قدرت تحلها. كان دورك إيه والنتيجة كانت إيه؟ <span class="req">*</span></label><textarea id="q2" name="q2" required placeholder="وضح دورك والتحدي والنتيجة..."></textarea></div>
+<div class="q"><label class="qtitle" for="q3">3. لو استلمت مهمة مش واضحة بالكامل، هتتصرف إزاي قبل ما تبدأ التنفيذ؟ <span class="req">*</span></label><textarea id="q3" name="q3" required placeholder="اشرح خطواتك..."></textarea></div>
+<div class="q"><label class="qtitle" for="q4">4. لو اختلفت مع زميل أو وصلتك ملاحظات على شغلك، هتتعامل إزاي؟ <span class="req">*</span></label><textarea id="q4" name="q4" required placeholder="احكيلنا طريقة تعاملك..."></textarea></div>
+<div class="q"><label class="qtitle" for="q5">5. إيه اللي متوقعه من Øptic، وإيه اللي تقدر تضيفه للفريق؟ <span class="req">*</span></label><textarea id="q5" name="q5" required placeholder="اكتب توقعاتك ومساهمتك..."></textarea></div>
+<div class="q"><label class="qtitle" for="q6">6. هل عندك أي التزامات أو ظروف لازم نراعيها في مواعيد التسليم والتواصل؟</label><textarea id="q6" name="q6" placeholder="اختياري"></textarea></div>
+</div></div>
+<div class="actions"><button class="btn primary" id="submitBtn" type="submit">إرسال الإجابات ↗</button><button class="btn secondary" type="reset">مسح الإجابات</button></div>
+<div class="progress"><span id="progress"></span></div><p class="note">إرسال النموذج يعني موافقتك على استخدام بياناتك لمراجعة طلب الانضمام والتواصل معك بشأنه.</p><div class="status" id="status" role="status"></div>
+</form>
+<footer class="footer">© Øptic — Thoughtful digital experiences, built together.</footer>
+</div>
+<script>
+/* بعد إعداد Google Apps Script، ضع رابط Web App المنشور هنا */
+const GOOGLE_SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const form=document.getElementById('interview'),statusBox=document.getElementById('status'),btn=document.getElementById('submitBtn');
+const fields=[...form.querySelectorAll('input,select,textarea')];
+function updateProgress(){const required=fields.filter(x=>x.required);const done=required.filter(x=>x.value.trim()).length;document.getElementById('progress').style.width=Math.round(done/required.length*100)+'%'}
+fields.forEach(x=>x.addEventListener('input',updateProgress));form.addEventListener('reset',()=>setTimeout(updateProgress,0));
+form.addEventListener('submit',async e=>{e.preventDefault();statusBox.style.display='block';statusBox.className='status';statusBox.textContent='';if(GOOGLE_SCRIPT_URL.startsWith('PASTE_')){statusBox.className='status error';statusBox.textContent='النموذج جاهز، لكن استقبال الإجابات لم يتم تفعيله بعد. يلزم ربطه بـ Google Sheets من خلال خطوات الإعداد المرفقة.';return}
+btn.disabled=true;btn.textContent='جاري الإرسال...';const data=Object.fromEntries(new FormData(form).entries());data.submittedAt=new Date().toISOString();
+try{await fetch(GOOGLE_SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(data)});statusBox.textContent='تم إرسال إجاباتك. شكرًا لاهتمامك بالانضمام إلى Øptic، هنراجع طلبك ونتواصل معاك لو في خطوة تالية.';form.reset();updateProgress()}
+catch(err){statusBox.className='status error';statusBox.textContent='حصلت مشكلة أثناء الإرسال. اتأكد من اتصال الإنترنت وجرب تاني.'}
+finally{btn.disabled=false;btn.textContent='إرسال الإجابات ↗'}
+});
+</script>
+</body></html>

@@ -1,0 +1,23 @@
+Øptic Interview — quick setup
+
+FILES
+- index.html: applicant-facing interview website
+- Code.gs: Google Apps Script that saves submissions to Google Sheets
+
+TO MAKE ANSWERS REACH YOU
+1. Create a new Google Sheet in your Google account.
+2. In the sheet, choose Extensions > Apps Script.
+3. Replace the editor contents with Code.gs and save.
+4. Choose Deploy > New deployment > Web app.
+5. Set “Execute as” to Me and access to Anyone, then Deploy and authorize.
+6. Copy the Web app URL (ends in /exec).
+7. Open index.html in a text editor and replace:
+   PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE
+   with the URL you copied.
+8. Save index.html and publish it using a static host (e.g. Netlify or GitHub Pages).
+9. Test with a sample submission and confirm a row appears in the sheet.
+
+IMPORTANT
+- Until the URL is configured, the form will not send responses; it clearly shows a setup message.
+- The deployed Web App must be accessible to applicants. Do not store highly sensitive personal information in this form.
+- The included form is a first version. Questions and role options can be customized later.
