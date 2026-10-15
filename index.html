@@ -43,7 +43,7 @@
 </div>
 <script>
 /* بعد إعداد Google Apps Script، ضع رابط Web App المنشور هنا */
-const GOOGLE_SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwCxgvdMmkT4hfAd6ndy3R2Mq1NPacGsU93ZlYUvlQauN5ftwDSg_wEeSbl8To2dn0/exec";
 const form=document.getElementById('interview'),statusBox=document.getElementById('status'),btn=document.getElementById('submitBtn');
 const fields=[...form.querySelectorAll('input,select,textarea')];
 function updateProgress(){const required=fields.filter(x=>x.required);const done=required.filter(x=>x.value.trim()).length;document.getElementById('progress').style.width=Math.round(done/required.length*100)+'%'}
